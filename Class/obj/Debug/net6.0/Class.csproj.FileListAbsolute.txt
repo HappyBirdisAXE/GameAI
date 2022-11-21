@@ -1,0 +1,12 @@
+/workspaces/codespaces-blank/Class/bin/Debug/net6.0/Class.deps.json
+/workspaces/codespaces-blank/Class/bin/Debug/net6.0/Class.dll
+/workspaces/codespaces-blank/Class/bin/Debug/net6.0/Class.pdb
+/workspaces/codespaces-blank/Class/obj/Debug/net6.0/Class.csproj.AssemblyReference.cache
+/workspaces/codespaces-blank/Class/obj/Debug/net6.0/Class.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/codespaces-blank/Class/obj/Debug/net6.0/Class.AssemblyInfoInputs.cache
+/workspaces/codespaces-blank/Class/obj/Debug/net6.0/Class.AssemblyInfo.cs
+/workspaces/codespaces-blank/Class/obj/Debug/net6.0/Class.csproj.CoreCompileInputs.cache
+/workspaces/codespaces-blank/Class/obj/Debug/net6.0/Class.dll
+/workspaces/codespaces-blank/Class/obj/Debug/net6.0/refint/Class.dll
+/workspaces/codespaces-blank/Class/obj/Debug/net6.0/Class.pdb
+/workspaces/codespaces-blank/Class/obj/Debug/net6.0/ref/Class.dll
