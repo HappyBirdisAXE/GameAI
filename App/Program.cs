@@ -27,6 +27,7 @@ namespace App
 
                 Console.Clear();
                 TicTacToe.ChangeGrid(Y,X);
+                Console.WriteLine();
                 
             }
         }
