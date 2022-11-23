@@ -28,6 +28,8 @@ public class TicTacToe
         };
         
         public static string[,] GameGrid = _grid;
+        public static bool[,] PlayerTaken = _player_taken;
+        public static bool [,] ComputerTaken = _computer_taken;
         public static bool PlayerWinState { get => _player_win_state; }
         public static bool ComputerWinState { get => _computer_win_state; }
         public static string Turn { get => _turn; } 
@@ -124,9 +126,44 @@ public class TicTacToe
         }
         public static void ResetGame()
         {
-            GameGrid = _grid;
+            int RowSize = GameGrid.GetLength(0);
+            int ColumnSize = GameGrid.GetLength(1);
+            int TrueRowSize = _player_taken.GetLength(0);
+            int TrueColumnSize = _player_taken.GetLength(1);
+            string Erase = " ";
+            for(int i = 0; i < RowSize; i++)
+            {
+                for(int j = 0; j < ColumnSize; j++)
+                {
+                    if(GameGrid[i,j].Contains("O"))
+                    {
+                        Erase = GameGrid[i,j].Replace("O", " ");
+                        GameGrid[i,j] = Erase;
+                    }
+                    if(GameGrid[i,j].Contains("X"))
+                    {
+                    Erase = GameGrid[i,j].Replace("X", " ");
+                    GameGrid[i,j] = Erase;
+                    }
+                }
+            }
             _player_win_state = false;
             _computer_win_state = false;
             _turn = "PLAYER";
+
+            for(int i = 0; i < TrueRowSize; i++)
+            {
+                for(int j = 0; j < TrueColumnSize; j++)
+                {
+                    _computer_taken[i,j] = false;
+                }
+            }
+            for(int i = 0; i < TrueRowSize; i++)
+            {
+                for(int j = 0; j < TrueColumnSize; j++)
+                {
+                    _player_taken[i,j] = false;
+                }
+            }
         }
     }
