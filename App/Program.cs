@@ -49,7 +49,7 @@ namespace App
                         }
                         else if(Option.ToUpper().Contains('Y')) 
                         {
-                            
+                            TicTacToe.ResetGame();
                             break;
                         }
                     }
